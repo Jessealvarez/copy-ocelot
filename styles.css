@@ -1,0 +1,108 @@
+div {
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 40px grey;
+   
+}
+
+body {
+    background-color: lightskyblue;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+#logo {
+    grid-area: logo;
+    border: 0px;
+    height: 50px;
+    width: 50px;
+}
+#searchbar {
+    border: 2px solid black;
+    height: 10px;
+    width: 500px;
+    background-color: white;
+    grid-area: searchbar;
+}
+
+#menu1 {
+    grid-area: dropmenu;
+    border: 2px solid black;
+    height: 25px;
+    width: 25px;
+    background-color:white;
+}
+#today {
+    grid-area:today;
+}
+#hourly {
+    grid-area:hourly;
+}
+#tenday {
+    grid-area:tenday;
+}
+#weekly {
+    grid-area:weekly;
+}
+#secondheader {
+    border: 2px solid black;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "today hourly tenday weekly";
+
+}
+
+#location {
+    grid-area: location;
+    border: 2px solid black;
+    height: 10px;
+    width: 80px;
+    background-color: white;
+
+}
+
+#adbanner {
+    grid-area: adbanner;
+    
+}
+
+#mainpage {
+    grid-area: mainpage;
+    background-color: white;
+    border: 0px;
+    height: 800px;
+    width: 900px;
+}
+
+#sidebannerad {
+    grid-area: sidebannerad;
+    background-color: white;
+    border: 2px solid black;
+    height: 500px;
+    width: 100px;
+}
+
+#topbar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "logo searchbar menu1";
+
+}
+#content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mainpage sidebannerad";
+}
